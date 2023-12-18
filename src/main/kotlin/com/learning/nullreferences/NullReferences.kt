@@ -40,6 +40,13 @@ fun main(args: Array<String>) {
     println(str3)
 
     println(str3?.uppercase())
+
+
+    val nullableInts = arrayOfNulls<Int?>(5)
+    for(i in nullableInts){
+        println(i)
+    }
+    println(nullableInts[3])
 }
 
 fun printText(text: String) {
