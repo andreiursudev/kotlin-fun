@@ -1,3 +1,7 @@
+package com.learning.declarations
+
+typealias EmployeeSet = Set<Employee>
+
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -15,7 +19,7 @@ fun main(args: Array<String>) {
 
     //employee1 = Employee("Tim Watson", 100) cannot assign a new instance to employee1 reference variable
 
-
+    val employees: EmployeeSet
 }
 
 class Employee(var name: String, val id: Int) {
