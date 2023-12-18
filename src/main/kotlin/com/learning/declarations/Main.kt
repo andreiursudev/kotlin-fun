@@ -22,6 +22,12 @@ fun main(args: Array<String>) {
     println(employeeTwo !== employeeThree)
 
 
+    val something: Any = employeeFour
+    if(something is Employee){
+        val newEmployee = something as Employee //as = cast
+        println(something.name)//smart casting
+    }
+
     println("Hello World!")
 
     //val = final
