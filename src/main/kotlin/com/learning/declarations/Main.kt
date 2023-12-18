@@ -3,6 +3,25 @@ package com.learning.declarations
 typealias EmployeeSet = Set<Employee>
 
 fun main(args: Array<String>) {
+    val employeeOne = Employee("Mary", 1)
+    val employeeTwo = Employee("John", 2)
+    val employeeThree = Employee("John", 2)
+
+    println(employeeOne == employeeTwo)
+    println(employeeTwo == employeeThree)
+    println(employeeOne === employeeTwo)
+    println(employeeTwo === employeeThree)
+    println(employeeOne.equals(employeeTwo))
+    println(employeeTwo.equals(employeeThree))
+    val employeeFour =employeeTwo
+    println(employeeFour === employeeThree)
+
+    println(employeeFour != employeeTwo)
+    println(employeeFour !== employeeTwo)
+    println(employeeTwo != employeeThree)
+    println(employeeTwo !== employeeThree)
+
+
     println("Hello World!")
 
     //val = final
@@ -23,5 +42,10 @@ fun main(args: Array<String>) {
 }
 
 class Employee(var name: String, val id: Int) {
-
+    override fun equals(obj: Any?): Boolean {
+        if(obj is Employee){
+            return name==obj.name && id==obj.id
+        }
+        return false
+    }
 }
