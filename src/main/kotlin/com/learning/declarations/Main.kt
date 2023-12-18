@@ -28,6 +28,8 @@ fun main(args: Array<String>) {
         println(something.name)//smart casting
     }
 
+
+
     println("Hello World!")
 
     //val = final
@@ -45,6 +47,18 @@ fun main(args: Array<String>) {
     //employee1 = Employee("Tim Watson", 100) cannot assign a new instance to employee1 reference variable
 
     val employees: EmployeeSet
+
+    println(employee1)
+
+    val change = 4.22
+    println("To show the value of change, we use \$change")
+    println("Your change is $\$change")
+
+    val numerator = 10.99
+    val denominator = 20.00
+    println("The value of $numerator divided by $denominator is ${numerator/denominator}")
+
+    println("The employee's id is ${employee1.id}")
 }
 
 class Employee(var name: String, val id: Int) {
@@ -54,4 +68,9 @@ class Employee(var name: String, val id: Int) {
         }
         return false
     }
+
+    override fun toString(): String {
+        return "Employee(name=$name, id=$id)"//string template
+    }
+
 }
