@@ -1,4 +1,4 @@
-package com.learning.declarations
+package com.learning.c01declarations
 
 typealias EmployeeSet = Set<Employee>
 

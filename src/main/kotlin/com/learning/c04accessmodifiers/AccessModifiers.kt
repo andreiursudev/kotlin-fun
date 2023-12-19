@@ -1,4 +1,4 @@
-package com.learning.accessmodifiers
+package com.learning.c04accessmodifiers
 
 //private - visible within the same file
 //protected - can't be used

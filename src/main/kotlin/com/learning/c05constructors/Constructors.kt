@@ -1,4 +1,4 @@
-package com.learning.accessmodifiers
+package com.learning.c04accessmodifiers
 
 fun main(args: Array<String>) {
     val emp2 = Employee2("John")
