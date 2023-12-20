@@ -1,5 +1,7 @@
 package academy.learnprogramming.lambdas
 
+import com.learning.c17lambdaexpressions.Employee
+
 fun main(args: Array<String>) {
     //run { println("I'm in a lambda!") }
 
