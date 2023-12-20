@@ -1,4 +1,4 @@
-package com.learning.c18Collections
+package com.learning.c18collections
 
 
 fun main(args: Array<String>) {
